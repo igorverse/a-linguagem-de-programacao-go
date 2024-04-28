@@ -30,3 +30,5 @@ A variável os.Args é uma fatia (slice) de strings.
 - %v -> qualquer valor em um formato natural
 - %T -> tipo de qualquer valor
 - %% -> sinal de porcentagem literal
+
+## Buscando um URL
