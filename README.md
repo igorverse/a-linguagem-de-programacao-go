@@ -4,4 +4,5 @@ A linguagem Go foi criada em setembro de 2007 por Robert Griesemer, Rob Pike e K
 
 ## Capítulos 
 
-- [-] Tutorial
+- [x] Tutorial
+- [ ] Estrutura dos Programas
