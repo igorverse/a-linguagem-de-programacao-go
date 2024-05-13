@@ -68,3 +68,14 @@ _, err = io.Copy(dst, src) // descarta o número de bytes
 - Pacotes em Go têm o mesmo propósito das bibliotecas ou módulos em outras linguagens; eles suportam modularidade, encapsulamento, compilação separada e reutilização
 - Cada pacote serve como um name space (espaço de nomes) separado paras suas declarações
 - Para referenciar uma função fora de seu pacote é necessário qualificar o identificador para deixar explícito se queremos dizer, por exemplo: `image.Decode` ou `utf16.Decode`
+
+## Importações
+
+- Todo pacote é identificado por uma string única chamada path de importação
+- Um path de importação representa um diretório contendo um ou mais arquivos-fonte Go que, juntos, compõe o pacote
+- Cada pacote tem um `package name` que, por convenção, coincide com o último segmento do seu `path de importação`
+
+```
+gopl.io/ch2/tempconv -> path de importação
+tempconv -> package name
+```
