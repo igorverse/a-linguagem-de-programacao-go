@@ -69,7 +69,7 @@ _, err = io.Copy(dst, src) // descarta o número de bytes
 - Cada pacote serve como um name space (espaço de nomes) separado paras suas declarações
 - Para referenciar uma função fora de seu pacote é necessário qualificar o identificador para deixar explícito se queremos dizer, por exemplo: `image.Decode` ou `utf16.Decode`
 
-## Importações
+### Importações
 
 - Todo pacote é identificado por uma string única chamada path de importação
 - Um path de importação representa um diretório contendo um ou mais arquivos-fonte Go que, juntos, compõe o pacote
