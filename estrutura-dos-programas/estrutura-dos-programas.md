@@ -79,3 +79,18 @@ _, err = io.Copy(dst, src) // descarta o número de bytes
 gopl.io/ch2/tempconv -> path de importação
 tempconv -> package name
 ```
+### Inicialização de pacotes
+
+- Começa pela inicialização de variáveis de nível de pacote na ordem em que elas são declaradas, exceto que as dependências são resolvidas antes:
+
+```
+var a = b + c // a é inicializada em terceiro lugar, com 3
+var b = f() // b é inicializada em segundo lugar, com 2, chamando f
+var c = 1 // c é inilizada em primeiro lugar, com 1
+func f() int { return c + 1}
+```
+
+- Um pacote é inicializado de cada vez, na ordem das importações no programa - em primeiro lugar as dependências
+- A inicialização ocorre de baixo para cima
+- O pacote main é o último a ser inicializado
+- `func init(){}`. Em cada arquivo, funções **init** são automaticamente executadas quando o programa inicia e na ordem em que elas são declaradas.
