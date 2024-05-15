@@ -94,3 +94,9 @@ func f() int { return c + 1}
 - A inicialização ocorre de baixo para cima
 - O pacote main é o último a ser inicializado
 - `func init(){}`. Em cada arquivo, funções **init** são automaticamente executadas quando o programa inicia e na ordem em que elas são declaradas.
+
+## Escopo
+
+- O escopo de uma decalração é a parte do código-fonte em que um uso do nome declarado refere-se a essa declaração
+- Escopo não deve ser confudido com tempo de vida
+- Escopo é uma propriedade de tempo de compilação. É uma região do texto do programa
