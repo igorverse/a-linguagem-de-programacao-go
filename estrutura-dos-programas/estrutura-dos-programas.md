@@ -100,3 +100,5 @@ func f() int { return c + 1}
 - O escopo de uma decalração é a parte do código-fonte em que um uso do nome declarado refere-se a essa declaração
 - Escopo não deve ser confudido com tempo de vida
 - Escopo é uma propriedade de tempo de compilação. É uma região do texto do programa
+- Um bloco sintático é uma sequência de instruções entre chaves, como aquelas em torno do corpo de uma função ou de um loop. Portanto, um nome declarado em um bloco sintático não é visível fora desse bloco
+- Declarações curtas de variáveis exigem consciência do escopo
