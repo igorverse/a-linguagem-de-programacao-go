@@ -11,3 +11,8 @@ Os tipos de Go classificam-se em quatro grupos: tipos básicos, tipos agregados,
 - `rune` é sinônimo para `int32`. Por convenção, indica que um valor é um código Unicode
 - `byte` é sinônimo para `uint8`, usado para enfatizar que um valor é um dado bruto
 - int é diferente de int32, assim como é diferente de int64
+
+## Números de ponto flutuante
+
+- Go oferece dois tamanhos de números de ponto flutuante: `float32` e `float64`
+- Deve-se dar preferência a `float64` na maioria dos casos
